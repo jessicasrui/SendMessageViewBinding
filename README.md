@@ -1,2 +1,2 @@
 # SendMessageViewBinding
- Proyecto en Android Studio con Data Binding
+Proyecto en Android Studio con Data Binding
