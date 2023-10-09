@@ -10,6 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Gradle antiguo:
+        // maven { url 'https://jitpack.io' }
+        maven (url = "https://jitpack.io")
     }
 }
 
