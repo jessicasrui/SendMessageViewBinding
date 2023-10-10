@@ -47,11 +47,13 @@ public class SendMessageActivity extends AppCompatActivity {
         return true;
     }
 
-    /*
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
+            // Esto en un principio daba error porque las properties de gradle han cambiado,
+            // esto: android.nonTransitiveRClass=true debe de ponerse a false y añadir esto: android.nonFinalResIds=false
             case R.id.menu_aboutas: {
                 Intent intent = new Intent(this, AboutActivity.class);
                 startActivity(intent);
@@ -60,7 +62,7 @@ public class SendMessageActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }*/
+    }
 
     //region MÉTODOS DE CICLO DE VIDA DE UNA ACTIVIY
     @Override

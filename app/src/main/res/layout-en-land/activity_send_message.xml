@@ -8,13 +8,13 @@
 
     <TextView
         android:id="@+id/tvTitleMessage"
-        android:fontFamily="@font/bebas_neue_regular"
-        android:textSize="@dimen/tvTitleMessage_textSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/bebas_neue_regular"
         android:text="@string/tvTitleMessage"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

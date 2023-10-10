@@ -4,5 +4,7 @@
     <string name="tvTitleMessage">Write a message:</string>
     <string name="tvUserInfoText">Shows user information</string>
     <string name="tvMessageText">The message information</string>
-    <string name="main_aboutas">About me</string>
+    <string name="menu_aboutas">About me</string>
+    <string name="autor_aboutas">Author</string>
+    <string name="enlace_aboutas">Fork on GitHub</string>
 </resources>
