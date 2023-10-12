@@ -69,7 +69,7 @@ public class ViewActivity extends AppCompatActivity {
      */
     private void initialiceView(){
         String userInfo = "La persona "+ message.getSender().getName() + " " + message.getSender().getSurname() + " " +
-                "con DNI: " + message.getSender().getDni() + " te ha mandado el seguiente mensaje.";
+                "con DNI " + message.getSender().getDni() + " te ha mandado el seguiente mensaje.";
 
         binding.tvUserInfo.setText(userInfo);
         binding.tvMessage.setText(message.getContent());

@@ -30,23 +30,18 @@ public class SendMessageActivity extends AppCompatActivity {
         binding = ActivitySendMessageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());  //getRoot es nuestro layout padre
         //OPCIÓN 3: Expresión Lambda para implemtar el evento onClick()
-        //binding.fab.setOnClickListener(view -> {
-        //    sendMessage();
-        //});
-        // TODO ¿¿esto da error en el logcat??
         binding.fab.setOnClickListener(view -> sendMessage());
 
         Log.d(TAG, "SendMessageActivity -> onCreate()");
     }
 
-    // Estre codigo es de https://developer.android.com/guide/topics/ui/menus?hl=es-419#java
+    // Este codigo es de https://developer.android.com/guide/topics/ui/menus?hl=es-419#java
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -104,8 +99,8 @@ public class SendMessageActivity extends AppCompatActivity {
     public void sendMessage() {
         Intent intent = new Intent(this, ViewActivity.class);
         Bundle bundle = new Bundle();
-        Person persone = new Person("Jessica", "Castro Ruiz", "1A");
-        Person persond = new Person("Adrián", "Almohalla Moreno", "1B");
+        Person persone = new Person("Jessica", "Castro Ruiz", "25459813A");
+        Person persond = new Person("Adrián", "Almohalla Moreno", "29746132B");
         Message message = new Message(binding.edMessage.getText().toString(), persone, persond);
         bundle.putParcelable(Message.KEY, message);
         intent.putExtras(bundle);

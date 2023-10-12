@@ -21,9 +21,10 @@ public class AboutActivity extends MaterialAboutActivity {
     protected MaterialAboutList getMaterialAboutList(@NonNull Context context) {
         MaterialAboutCard.Builder autorCardBuilder = new MaterialAboutCard.Builder();
         autorCardBuilder.title(R.string.autor_aboutas);
+        autorCardBuilder.cardColor(getColor(R.color.md_theme_light_tertiary));
         autorCardBuilder.addItem(new MaterialAboutActionItem.Builder()
                 .text("Jessica Castro Ruiz")
-                .subText("Alumna del IES Portada Alta")
+                .subText("Alum. módulo DEINT")
                 .icon(R.mipmap.usuario)
                 .build()
         );
@@ -37,8 +38,9 @@ public class AboutActivity extends MaterialAboutActivity {
 
         MaterialAboutCard.Builder versionCardBuilder = new MaterialAboutCard.Builder();
         //autorCardBuilder.title("Versión");
+        versionCardBuilder.cardColor(getColor(R.color.md_theme_dark_tertiary));
         versionCardBuilder.addItem(new MaterialAboutActionItem.Builder()
-                .text("Version 1.0")
+                .text("Version")
                 .subText("1.0.0")
                 .icon(R.mipmap.informacion)
                 .build()
