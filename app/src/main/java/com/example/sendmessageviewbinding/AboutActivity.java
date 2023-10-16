@@ -38,7 +38,7 @@ public class AboutActivity extends MaterialAboutActivity {
 
         MaterialAboutCard.Builder versionCardBuilder = new MaterialAboutCard.Builder();
         //autorCardBuilder.title("Versión");
-        versionCardBuilder.cardColor(getColor(R.color.md_theme_dark_tertiary));
+        versionCardBuilder.cardColor(getColor(R.color.md_theme_light_tertiary));
         versionCardBuilder.addItem(new MaterialAboutActionItem.Builder()
                 .text("Version")
                 .subText("1.0.0")

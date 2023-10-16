@@ -12,9 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
-        android:layout_weight="1"
-        android:background="@color/md_theme_dark_tertiary"
-        android:text="@string/tvUserInfoText" />
+        android:layout_weight="2"
+        android:text="@string/tvUserInfoText"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:background="@color/md_theme_light_tertiary"
+        android:fontFamily="@font/handmade"
+        android:textSize="@dimen/tvUserInfo_textSize" />
 
     <TextView
         android:id="@+id/tvMessage"
@@ -22,6 +25,9 @@
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:layout_weight="1"
-        android:background="@color/md_theme_dark_tertiary"
-        android:text="@string/tvMessageText" />
+        android:text="@string/tvMessageText"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:background="@color/md_theme_light_tertiary"
+        android:fontFamily="@font/handmade"
+        android:textSize="@dimen/tvMessage_textSize" />
 </LinearLayout>

@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
-import android.widget.TextView;
 
 import com.example.sendmessageviewbinding.databinding.ActivityViewBinding;
-import com.example.sendmessageviewbinding.model.data.Message;
+import com.example.sendmessageviewbinding.data.model.Message;
 
 public class ViewActivity extends AppCompatActivity {
     private ActivityViewBinding binding;

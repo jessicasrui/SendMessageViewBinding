@@ -1,4 +1,4 @@
-package com.example.sendmessageviewbinding.model.data;
+package com.example.sendmessageviewbinding.data.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * Clase Person que engloba la información de una persona em nuestra app
+ * Clase Person que engloba la información de una persona en nuestra app
  * @author jessi
  * @version 1.0
  */

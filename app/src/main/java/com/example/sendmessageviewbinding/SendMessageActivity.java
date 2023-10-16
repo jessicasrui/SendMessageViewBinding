@@ -9,13 +9,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sendmessageviewbinding.databinding.ActivitySendMessageBinding;
-import com.example.sendmessageviewbinding.model.data.Message;
-import com.example.sendmessageviewbinding.model.data.Person;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.sendmessageviewbinding.data.model.Message;
+import com.example.sendmessageviewbinding.data.model.Person;
 
 public class SendMessageActivity extends AppCompatActivity {
     // Es MUY IMPORTANTE poner bien el nombre de esta clase
@@ -29,7 +27,7 @@ public class SendMessageActivity extends AppCompatActivity {
         // inflate coge el xml y lo pasa a memoria
         binding = ActivitySendMessageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());  //getRoot es nuestro layout padre
-        //OPCIÓN 3: Expresión Lambda para implemtar el evento onClick()
+        //OPCIÓN 3: Expresión Lambda para implentar el evento onClick()
         binding.fab.setOnClickListener(view -> sendMessage());
 
         Log.d(TAG, "SendMessageActivity -> onCreate()");
@@ -101,21 +99,9 @@ public class SendMessageActivity extends AppCompatActivity {
         Bundle bundle = new Bundle();
         Person persone = new Person("Jessica", "Castro Ruiz", "25459813A");
         Person persond = new Person("Adrián", "Almohalla Moreno", "29746132B");
-        Message message = new Message(binding.edMessage.getText().toString(), persone, persond);
+        Message message = new Message(1, binding.edMessage.getText().toString(), persone, persond);
         bundle.putParcelable(Message.KEY, message);
         intent.putExtras(bundle);
         startActivity(intent);
-    }
-
-    /**
-     * Clase interna o Clase anónima o Clase anidada que implementa una interfaz, esta clase no tiene nombre
-     * OPCIÓN 1: Se crea una clase que implementa la interfaz View.OnClickListener
-     */
-    class SendMessageOnClickListener implements View.OnClickListener {
-
-        @Override
-        public void onClick(View v) {
-            Toast.makeText(SendMessageActivity.this, "Se ha pulsado sobre el botón enviar", Toast.LENGTH_LONG).show();
-        }
     }
 }

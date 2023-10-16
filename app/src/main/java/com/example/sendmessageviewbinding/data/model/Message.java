@@ -1,4 +1,4 @@
-package com.example.sendmessageviewbinding.model.data;
+package com.example.sendmessageviewbinding.data.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -23,7 +23,7 @@ public class Message implements Serializable, Parcelable {
     private Person receiver;
 
     // Constructor
-    public Message(String content, Person sender, Person receiver) {
+    public Message(int id, String content, Person sender, Person receiver) {
         this.id = id;   // en la realido no se asigna al contructor, porque nos lo da Firebase o MySQL
         this.content = content;
         this.sender = sender;
