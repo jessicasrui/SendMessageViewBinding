@@ -28,6 +28,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="82dp"
+        android:fontFamily="@font/handmade"
+        android:textSize="@dimen/edMessage_textSize"
         android:textColor="@color/md_theme_light_onPrimary"
         android:background="@color/md_theme_light_tertiary"
         android:ems="10"

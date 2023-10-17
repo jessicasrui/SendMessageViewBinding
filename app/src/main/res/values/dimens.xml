@@ -3,4 +3,5 @@
     <dimen name="tvTitleMessage_textSize">30sp</dimen>
     <dimen name="tvUserInfo_textSize">20sp</dimen>
     <dimen name="tvMessage_textSize">20sp</dimen>
+    <dimen name="edMessage_textSize">20sp</dimen>
 </resources>
