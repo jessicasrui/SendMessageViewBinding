@@ -5,8 +5,8 @@ Proyecto en Android Studio con Data Binding
 
 | Modo Light                                                                                    |
 |---------------------------------------------------------------------------------------------- |
-| ![Demo App]  (imagenes/1.jpg) | ![Demo App]  (imagenes/2.jpg) | ![Demo App]  (imagenes/3.jpg) |
+| ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/1.jpg) | ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/2.jpg) | ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/3.jpg) |
 
 | Modo Dark                                                                                     |
 |---------------------------------------------------------------------------------------------- |
-| ![Demo App]  (imagenes/4.jpg) | ![Demo App]  (imagenes/5.jpg) | ![Demo App]  (imagenes/6.jpg) |
+| ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/4.jpg) | ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/5.jpg) | ![Demo App]  (https://github.com/jessicasrui/SendMessageViewBinding/tree/main/imagenes/6.jpg) |
